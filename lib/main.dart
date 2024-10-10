@@ -18,6 +18,17 @@ class MyApp extends StatelessWidget {
           useMaterial3: true,
         ),
         initialRoute: initAppRoute,
-        routes: appRoutes);
+        routes: appRoutes,
+        onGenerateRoute: (settings) {
+          return MaterialPageRoute(
+            builder: (context) {
+              return const Scaffold(
+                body: Center(
+                  child: Text('No route defined for'),
+                ),
+              );
+            },
+          );
+        });
   }
 }
