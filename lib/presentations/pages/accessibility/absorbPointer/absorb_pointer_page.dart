@@ -14,17 +14,11 @@ class _AbsorbPointerPageState extends State<AbsorbPointerPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Stack(
-          alignment: AlignmentDirectional.center,
-          children: <Widget>[
-            SizedBox(
-              width: 200.0,
-              height: 100.0,
-              child: ElevatedButton(
-                onPressed: () {},
-                child: null,
-              ),
-            ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+                'absorbing: یک property از نوع boolean که مشخص می‌کند آیا AbsorbPointer باید لمس‌ها را جذب کند یا خیر.absorbing: true (پیش‌فرض): لمس‌ها جذب می‌شوند و به فرزندان منتقل نمی‌شوند.absorbing: false: لمس‌ها به فرزندان منتقل می‌شوند و AbsorbPointer هیچ تاثیری نخواهد داشت.child: Widget فرزندی که می‌خواهید تعامل با آن را کنترل کنید.'),
             SizedBox(
               width: 100.0,
               height: 200.0,
