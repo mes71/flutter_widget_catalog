@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widget_catalog/data/model/main/main_model.dart';
 import 'package:flutter_widget_catalog/presentations/pages/accessibility/absorbPointer/absorb_pointer_page.dart';
-import 'package:flutter_widget_catalog/presentations/pages/accessibility/semantics_page.dart';
+import 'package:flutter_widget_catalog/presentations/pages/accessibility/merge_semantics/merge_semantics_page.dart';
+import 'package:flutter_widget_catalog/presentations/pages/accessibility/semantics/semantics_page.dart';
 import 'package:flutter_widget_catalog/presentations/pages/root/root_page.dart';
 
 List<MainModel> accessibilityList = [
@@ -14,6 +15,11 @@ List<MainModel> accessibilityList = [
     title: 'Semantics',
     route: SemanticsPage.tag,
     color: Colors.deepPurple.shade200,
+  ),
+  MainModel(
+    title: 'MergeSemantics',
+    route: MergeSemanticsPage.tag,
+    color: Colors.deepPurple.shade100,
   ),
 ];
 
